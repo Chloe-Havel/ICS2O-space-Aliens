@@ -1,1 +1,7 @@
-# ICS2O-space-Aliens
+# ICS2O, phaser 3 → space Aliens
+
+[![Mr Coxall's Super Linter](https://github.com/Chloe-Havel/ICS2O-space-Aliens/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/Chloe-Havel/ICS2O-space-Aliens-js/actions/)
+
+[![Run on Repl.it](https://repl.it/badge/github/Chloe-Havel/ICS2O-space-Aliens)](https://repl.it/github/Chloe-Havel/ICS2O-space-Aliens)
+
+https://Chloe-Havel.github.io/ICS2O-space-Aliens](https://Chloe-Havel.github.io/ICS2O-space-Aliens)
