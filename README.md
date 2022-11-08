@@ -1,4 +1,4 @@
-# ICS2O, phaser 3 → space Aliens
+# ICS2O-space-Aliens
 
 [![Mr Coxall's Super Linter](https://github.com/Chloe-Havel/ICS2O-space-Aliens/workflows/Mr%20Coxall's%20Super%20Linter/badge.svg)](https://github.com/Chloe-Havel/ICS2O-space-Aliens-js/actions/)
 
