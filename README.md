@@ -4,4 +4,4 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/Chloe-Havel/ICS2O-space-Aliens)](https://repl.it/github/Chloe-Havel/ICS2O-space-Aliens)
 
-https://Chloe-Havel.github.io/ICS2O-space-Aliens](https://Chloe-Havel.github.io/ICS2O-space-Aliens)
+This site can be found at: [https://Chloe-Havel.github.io/ICS2O-space-Aliens](https://Chloe-Havel.github.io/ICS2O-space-Aliens)
