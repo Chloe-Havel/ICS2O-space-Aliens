@@ -22,7 +22,7 @@ const config = {
   // set background color
   backgroundColor: 0x5f6e7a,
   scale: {
-    mode: Phaser.scale.FIT
+    mode: Phaser.scale.FIT,
     // we place it in the middle of the page.
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
