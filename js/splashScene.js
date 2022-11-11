@@ -33,24 +33,24 @@ class SplashScene extends Phaser.Scene {
    */
   perload() {
     console.log("Splash Scene")
-  }
+}
 
-  /**
+    /**
    * cand be defined on your own Scenes.
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  create(data) {
+    create(data) {
     // pass
-  }
+}
 
-  /**
+    /**
    * Should be overridden  by your own Scenes.
    * This method is called once per game step white the scene is runing
    * @param {number} time - The current time.
    * @param {number} delta - The delta time in ms sinec last frame.
    */
-  update(time, delta) {
+    update(time, delta) {
     // pass
   }
 }
