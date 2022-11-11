@@ -10,7 +10,7 @@
 import SplashScene from "./splashScene.js"
 
 // create the new scenes
-const splashSene = new SplashScene()
+const splashScene = new SplashScene()
 
 /**
  * Start Phaser Game.
