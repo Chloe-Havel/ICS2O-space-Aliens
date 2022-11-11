@@ -7,7 +7,7 @@
 // This is the phaser3 game configation file
 
 // scene import ststements
-import SplashScene from "./splashSene.js"
+import SplashScene from "./splashScene.js"
 
 // create the new scenes
 const splashSene = new SplashScene()
