@@ -18,12 +18,12 @@ class SplashScene extends Phaser.Scene {
   }
 
   /**
-   * Canbe definded on your own Ssenes.
+   * Can be definded on your own Ssenes.
    * This method is called by the Scene Manager when the scene Starts,
    *   before preload() and create().
    * @param {object} data - Anydata passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  Infinity(data) {
+  Init(data) {
     this.cameras.main.setBackgroundColor("ffffff")
   }
 
