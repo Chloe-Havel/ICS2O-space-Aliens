@@ -45,7 +45,7 @@ class TitleScene extends Phaser.Scene {
   }
 
   /**
-   * Should be overridden  by your own Scenes.
+   * Should be overridden by your own Scenes.
    * This method is called once per game step white the scene is runing
    * @param {number} time - The current time.
    * @param {number} delta - The delta time in ms sinec last frame.
