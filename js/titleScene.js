@@ -23,7 +23,7 @@ class TitleScene extends Phaser.Scene {
    *   before preload() and create().
    * @param {object} data - Anydata passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  Init(data) {
+  init(data) {
     this.cameras.main.setBackgroundColor("ffffff")
   }
 
