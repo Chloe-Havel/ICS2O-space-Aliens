@@ -58,7 +58,7 @@ class SplashScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms sinec last frame.
    */
   update(time, delta) {
-    if (time > 3000){
+    if (time > 3000) {
       this.scene.switch("titleScene")
     }
   }
