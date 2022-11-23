@@ -50,7 +50,7 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.TitleSceneBackgroundImage = this.add
+    this.titleSceneBackgroundImage = this.add
       .sprite(0, 0, "titleSceneBackground")
       .setScale(2.75)
     this.titleSceneBackgroundImage.x = 1920 / 2
