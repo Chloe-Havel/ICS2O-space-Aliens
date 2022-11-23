@@ -4,12 +4,12 @@
 //
 // Created by: Chloe Havel
 // Created on: Sep 2020
-// This is the Splash Scene
+// This is the MenuScene
 
 /**
  * This class is the Splash Scene.
  */
-class SplashScene extends Phaser.Scene {
+class MenuScene extends Phaser.Scene {
   /**
    * This method is the construtor.
    */
