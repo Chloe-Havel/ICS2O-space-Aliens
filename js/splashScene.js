@@ -37,7 +37,7 @@ class SplashScene extends Phaser.Scene {
   }
 
   /**
-   * cand be defined on your own Scenes.
+   * can be defined on your own Scenes.
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
