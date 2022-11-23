@@ -39,7 +39,7 @@ class TitleScene extends Phaser.Scene {
    * Can be defined on yourown Scenes.
    * Use it to load assests.
    */
-  perload() {
+  preload() {
     console.log("Title Scene")
     this.load.image("titleSceneBackground", "assets/aliens_screen_image.jpg")
   }
