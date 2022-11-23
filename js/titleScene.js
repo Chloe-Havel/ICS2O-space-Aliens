@@ -16,7 +16,7 @@ class TitleScene extends Phaser.Scene {
   constructor() {
     super({ key: "titleScene" })
 
-    this.TitleSceneBackgroundImage = null
+    this.titleSceneBackgroundImage = null
     this.titleSceneText = null
     this.titleSceneTextStyle = {
       font: "200px Times",
@@ -50,7 +50,10 @@ class TitleScene extends Phaser.Scene {
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
   create(data) {
-    this.TitleSceneBackgroundImage.x = 1920 / 2
+    this.TitleSceneBackgroundImage = this.add
+      .sprite(0, 0, "titleSceneBackground")
+      .setScale(2.75)
+    this.titleSceneBackgroundImage.x = 1920 / 2
     this.TitleSceneBackgroundImage.y = 1080 / 2
 
     this.titleSceneText = this.add
