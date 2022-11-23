@@ -54,7 +54,7 @@ class TitleScene extends Phaser.Scene {
       .sprite(0, 0, "titleSceneBackground")
       .setScale(2.75)
     this.titleSceneBackgroundImage.x = 1920 / 2
-    this.TitleSceneBackgroundImage.y = 1080 / 2
+    this.titleSceneBackgroundImage.y = 1080 / 2
 
     this.titleSceneText = this.add
       .text(1920 / 2, 1080 / 2 + 350, "Space Aliens", this.titleSceneTextStyle)
