@@ -35,25 +35,24 @@ class GameScene extends Phaser.Scene {
     console.log("Game Scene")
   }
 
-    /**
+  /**
    * can be defined on your own Scenes.
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-    create(data) {
-      //pass
-    }
+  create(data) {
+    //pass
+  }
 
-    /**
+  /**
    * Should be overridden  by your own Scenes.
    * This method is called once per game step white the scene is runing
    * @param {number} time - The current time.
    * @param {number} delta - The delta time in ms sinec last frame.
    */
-    update(time, delta) {
-      //pass
-    }
+  update(time, delta) {
+    //pass
   }
-  
-  export default GameScene
-  
+}
+
+export default GameScene
