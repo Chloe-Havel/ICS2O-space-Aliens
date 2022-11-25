@@ -9,15 +9,12 @@
 /**
  * This class is the Splash Scene.
  */
-class MenuScene extends Phaser.Scene {
+class GameScene extends Phaser.Scene {
   /**
    * This method is the construtor.
    */
   constructor() {
-    super({ key: "menuScene" })
-
-    this.MenuSceneBackgroundImage = null
-    this.startButton = null
+    super({ key: "gameScene" })
   }
 
   /**
@@ -31,39 +28,32 @@ class MenuScene extends Phaser.Scene {
   }
 
   /**
-   * Can be defined on yourown Scenes.
-   * Use it to load assests.
+   * Can be defined on your own Scenes.
+   * Use it to create yur game objects.
    */
   preload() {
-    console.log("Menu Scene")
-    this.load.image("menuSceneBackground", "assets/aliens_screen_image2.jpg")
-    this.load.image ("startButon", "/assests/start.png")
+    console.log("Game Scene")
   }
 
-  /**
+    /**
    * can be defined on your own Scenes.
    * Use it to create your game objects.
    * @param {object} data - Any data passed via ScenePlugin.add() or ScenePlugin.start().
    */
-  create(data) {
-    this.MenuSceneBackgroundImage = this.add.sprite(0, 0, "menuSceneBackground")
-    this.splashSceneBackgroundImage.x = 1920 / 2
-    this.splashSceneBackgroundImage.y = 1080 / 2
+    create(data) {
+      //pass
+    }
 
-    this.startButton = this.add.sprite(1920 / 2, 1080 / 2 + 100, "startButton")
-    this.startButton.setInteractive({ useHanfCursor: true})
-    this.startButton.on("pointedown", () => this.clickButton())
-  }
-
-  /**
+    /**
    * Should be overridden  by your own Scenes.
    * This method is called once per game step white the scene is runing
    * @param {number} time - The current time.
    * @param {number} delta - The delta time in ms sinec last frame.
    */
-  update(time, delta) {
-    //pass
+    update(time, delta) {
+      //pass
+    }
   }
-}
-
-export default MenuScene
+  
+  export default GameScene
+  
