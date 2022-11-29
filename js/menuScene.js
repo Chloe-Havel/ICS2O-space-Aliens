@@ -52,7 +52,7 @@ class MenuScene extends Phaser.Scene {
 
     this.startButton = this.add.sprite(1920 / 2, 1080 / 2 + 100, "startButton")
     this.startButton.setInteractive({ useHanfCursor: true })
-    this.startButton.on("pointedown", () => this.clickButton())
+    this.startButton.on("pointerdown", () => this.clickButton())
   }
 
   /**
