@@ -60,12 +60,13 @@ class GameScene extends Phaser.Scene {
    * @param {number} delta - The delta time in ms sinec last frame.
    */
   update(time, delta) {
+    // called 6- times a scond, hopefully!
     const KeyLeftObj = this.input.Keyboard.addkey("LEFT")
     const KeyRightObj = this.input.Keyboard.addkey("RIGHT")
   }
 }
 
-if (KeyRightObj.isDown == true)
+if (KeyRightObj.isDown === true)
   this.ship.x += 15
   if (this.ship.x> 1920) {
     this.ship.x = 1920
