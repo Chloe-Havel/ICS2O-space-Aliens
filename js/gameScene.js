@@ -65,7 +65,7 @@ class GameScene extends Phaser.Scene {
     const KeyRightObj = this.input.Keyboard.addkey("RIGHT")
 
     if (KeyLeftObj.isDown === true) {
-      this.ship.x += - 15
+      this.ship.x += -15
       if (this.ship.x < 0) {
         this.ship.x = 0
       }
