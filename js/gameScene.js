@@ -3,7 +3,7 @@
 // Copyright (c) 2022 Chloe Havel All rights reserved
 //
 // Created by: Chloe Havel
-// Created on: Sep 2020
+// Created on: Sep 2022
 // This is the Splash Scene
 
 /**
