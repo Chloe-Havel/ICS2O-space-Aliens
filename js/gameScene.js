@@ -61,18 +61,18 @@ class GameScene extends Phaser.Scene {
    */
   update(time, delta) {
     // called 6- times a scond, hopefully!
-    const KeyLeftObj = this.input.Keyboard.addkey("LEFT")
-    const KeyRightObj = this.input.Keyboard.addkey("RIGHT")
+    const keyLeftObj = this.input.keyboard.addKey("LEFT")
+    const keyRightObj = this.input.keyboard.addKey("RIGHT")
 
-    if (KeyLeftObj.isDown === true) {
+    if (keyLeftObj.isDown === true) {
       this.ship.x += -15
       if (this.ship.x < 0) {
         this.ship.x = 0
       }
     }
 
-    if (KeyRightgObj.isDown === true) {
-      this.ship.x = +15
+    if (keyRightObj.isDown === true) {
+      this.ship.x += 15
       if (this.ship.x > 1920) {
         this.ship.x = 1920
       }
