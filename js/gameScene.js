@@ -71,6 +71,7 @@ class GameScene extends Phaser.Scene {
           this.ship.y,
           "missile"
         )
+        this.missileGroup.add(aNewMissile)
       }
     }
 
