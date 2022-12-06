@@ -15,7 +15,7 @@ class GameScene extends Phaser.Scene {
 
     this.setBackground = null
     this.ship = null
-    this.fireMissile = null
+    this.fireMissile = false
   }
 
   init(data) {
