@@ -10,7 +10,7 @@
  * This class is the Splash Scene.
  */
 class GameScene extends Phaser.Scene {
-  constructor () {
+  constructor() {
     super({ key: "gameScene" })
 
     this.setBackground = null
@@ -63,15 +63,19 @@ class GameScene extends Phaser.Scene {
     }
 
     if (KeySpaceObj.isDown === true) {
-      if (this.fireMissile === false) { 
+      if (this.fireMissile === false) {
         // fire misile
         this.fireMissile = true
-        const aNewMissile = this.physics.add.sprite(this.ship.x, this.ship.y, "missile")
+        const aNewMissile = this.physics.add.sprite(
+          this.ship.x,
+          this.ship.y,
+          "missile"
+        )
+      }
     }
-  }
 
     if (KeySpaceObj.isup === true) {
-      this.fireMissile = false 
+      this.fireMissile = false
     }
   }
 }
