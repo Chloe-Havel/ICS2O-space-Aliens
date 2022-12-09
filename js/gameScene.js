@@ -6,9 +6,6 @@
 // Created on: Sep 2022
 // This is the Splash Scene
 
-/**
- * This class is the Splash Scene.
- */
 class GameScene extends Phaser.Scene {
   // create an alien
   createAlien() {
