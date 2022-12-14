@@ -57,10 +57,7 @@ class GameScene extends Phaser.Scene {
     this.createAlien()
 
     //Collision between missiles and aliens
-    this.physics.add.collider(
-      this.missileGroup,
-      this.alienGroup,
-      function (missileCollide) {
+    this.physics.add.collider( this.missileGroup, this.alienGroup, function (missileCollide, alienCollide) {
         alienCollide.destroy()
         missileCollide.destroy()
         this.sound.play("explosion")
