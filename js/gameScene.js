@@ -109,9 +109,9 @@ class GameScene extends Phaser.Scene {
           .setOrigin(0.5)
         this.gameOverText.setinteractive({ useHandCursor: true })
         this.gameOverText.on("pointerdown", () => this.Scene.start("gameScene"))
-      }.bilnd(this)
-    )
-  }
+      }.bilnd(this))
+    
+    }
   update(time, delta) {
     // called 6- times a scond, hopefully!
 
