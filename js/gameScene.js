@@ -99,12 +99,19 @@ class GameScene extends Phaser.Scene {
         this.physics.pause()
         alienCollide.destroy()
         shipCollide.destroy()
-        this.gameOverText = this.add.text(1920 / 2, 1820 / 2, " Game Over!\nClick to play again.", this.gameOverTextStyle).setOrigin(0.5)
+        this.gameOverText = this.add
+          .text(
+            1920 / 2,
+            1820 / 2,
+            " Game Over!\nClick to play again.",
+            this.gameOverTextStyle
+          )
+          .setOrigin(0.5)
         this.gameOverText.setInteractive({ useHandCursor: true })
         this.gameOverText.on("pointerdown", () => this.Scene.start("gameScene"))
-      }.bind(this))
-    
-    }
+      }.bind(this)
+    )
+  }
 
   update(time, delta) {
     // called 6- times a scond, hopefully!
