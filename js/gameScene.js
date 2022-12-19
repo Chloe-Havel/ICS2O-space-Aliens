@@ -7,6 +7,7 @@
 // This is the Splash Scene
 
 class GameScene extends Phaser.Scene {
+
   // create an alien
   createAlien() {
     const alienXLocation = Math.floor(Math.random() * 1920) + 1 // this will get a number between 1 and 1920
@@ -25,10 +26,7 @@ class GameScene extends Phaser.Scene {
     this.fireMissile = false
     this.score = 0
     this.scoreText = null
-    this.scoreTexttyle = {
-      front: "65px Arial",
-      fill: "#ffffff",
-      align: "center",
+    this.scoreTexttyle = { front: "65px Arial", fill: "#ffffff", align: "center",
     }
   }
 
@@ -53,13 +51,8 @@ class GameScene extends Phaser.Scene {
     this.background = this.add.image(0, 0, "startBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
-    this.scoretText = this.add.text(
-      10,
-      10,
-      "score: " + this.score.toString(),
-      this.scoreTexttyle
-    )
-
+    this.scoretText = this.add.text(10, 10, "score: " + this.score.toString(), this.scoreTexttyle )
+    
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
 
     // create a group for the missiles
@@ -70,15 +63,12 @@ class GameScene extends Phaser.Scene {
     this.createAlien()
 
     //Collision between missiles and aliens
-    this.physics.add.collider(
-      this.missileGroup,
-      this.alienGroup,
-      function (missileCollide, alienCollide) {
+    this.physics.add.collider(this.missileGroup, this.alienGroup, function (missileCollide, alienCollide) {
         alienCollide.destroy()
         missileCollide.destroy()
         this.sound.play("explosion")
         this.score = this.score + 1
-        this.scoreText.setText("Score: " + this.score.toString)
+        this.scoreText.setText("Score: " + this.score.toString())
         this.createAlien()
         this.createAlien()
         console.log("Hit")
