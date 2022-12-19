@@ -7,7 +7,6 @@
 // This is the Splash Scene
 
 class GameScene extends Phaser.Scene {
-  
   // create an alien
   createAlien() {
     const alienXLocation = Math.floor(Math.random() * 1920) + 1 // this will get a number between 1 and 1920
@@ -26,8 +25,16 @@ class GameScene extends Phaser.Scene {
     this.fireMissile = false
     this.score = 0
     this.scoreText = null
-    this.scoreTexttyle = { front: "65px Arial", fill: "#ffffff", align: "center"}
-    this.gameOverTextStyle = { front: "65px Arial", fill: "#ff0000", align: "center"}
+    this.scoreTexttyle = {
+      front: "65px Arial",
+      fill: "#ffffff",
+      align: "center",
+    }
+    this.gameOverTextStyle = {
+      front: "65px Arial",
+      fill: "#ff0000",
+      align: "center",
+    }
   }
 
   init(data) {
@@ -52,7 +59,12 @@ class GameScene extends Phaser.Scene {
     this.background = this.add.image(0, 0, "startBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
-    this.scoreText = this.add.text(10, 10, "score: " + this.score.toString(), this.scoreTexttyle)
+    this.scoreText = this.add.text(
+      10,
+      10,
+      "score: " + this.score.toString(),
+      this.scoreTexttyle
+    )
 
     this.ship = this.physics.add.sprite(1920 / 2, 1080 - 100, "ship")
 
@@ -64,7 +76,10 @@ class GameScene extends Phaser.Scene {
     this.createAlien()
 
     //Collision between missiles and aliens
-    this.physics.add.collider(this.missileGroup, this.alienGroup, function (missileCollide, alienCollide) {
+    this.physics.add.collider(
+      this.missileGroup,
+      this.alienGroup,
+      function (missileCollide, alienCollide) {
         alienCollide.destroy()
         missileCollide.destroy()
         this.sound.play("explosion")
@@ -72,20 +87,31 @@ class GameScene extends Phaser.Scene {
         this.scoreText.setText("Score: " + this.score.toString())
         this.createAlien()
         this.createAlien()
-      }.bind(this))
+      }.bind(this)
+    )
 
-      // Collisions between ship and aliens
-      this.physics.add.collider(this.ship, this.alienGroup, function (shipCollide, alienCollide) {
+    // Collisions between ship and aliens
+    this.physics.add.collider(
+      this.ship,
+      this.alienGroup,
+      function (shipCollide, alienCollide) {
         this.sound.play("bomb")
         this.physics.pause()
         alienCollide.destroy()
         shipCollide.destroy()
-        this.gameOverText = this.add.text(1920 / 2, 1020 / 2, " Game Over!\nClick to play again.", this.gameOverTextStyle).setOrigin(0.5)
+        this.gameOverText = this.add
+          .text(
+            1920 / 2,
+            1020 / 2,
+            " Game Over!\nClick to play again.",
+            this.gameOverTextStyle
+          )
+          .setOrigin(0.5)
         this.gameOverText.setinteractive({ useHandCursor: true })
         this.gameOverText.on("pointerdown", () => this.Scene.start("gameScene"))
-  }.bilnd(this))
-    
-    }
+      }.bilnd(this)
+    )
+  }
   update(time, delta) {
     // called 6- times a scond, hopefully!
 
