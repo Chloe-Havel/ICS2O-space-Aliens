@@ -53,7 +53,7 @@ class GameScene extends Phaser.Scene {
     this.background = this.add.image(0, 0, "startBackground").setScale(2.0)
     this.background.setOrigin(0, 0)
 
-    this.scoretText = this.add.text(
+    this.scoreText = this.add.text(
       10,
       10,
       "score: " + this.score.toString(),
